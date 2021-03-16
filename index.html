@@ -98,7 +98,19 @@
     });
     </script>
 
-    <h3></h3>
+    <h3>class selector</h3>
+    <p>When a user clicks on a button, the elements with class="test" will be hidden:</p>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".test").hide();
+        });
+    });
+    </script>
+
+    <h4>If your website contains a lot of pages, and you want your jQuery functions to be easy to maintain, you can put your jQuery functions in a separate .js file.</h4>
+
 
 </body>
 </html>
