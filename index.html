@@ -70,6 +70,23 @@
 
         });
     -->
+
+    <h3>jQuery Selectors</h3>
+    <p>jQuery selectors are one of the most important parts of the jQuery library.</p>
     
+    <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
+    <p>All selectors in jQuery start with the dollar sign and parentheses: $().</p>
+
+    <p>example: when user clicks on button all p elements will be hidden</p>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide();
+        });
+    });            
+    </script>
+
+
 </body>
 </html>
