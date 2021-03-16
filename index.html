@@ -174,7 +174,36 @@
     });
     </script>
 
+    <h4>on() method</h4>
+    <p>The on() method attaches one or more event handlers for the selected elements.</p>
 
+    <script>
+    $(document).ready(function(){
+        $("p").on("click", function(){
+            $(this).hide();
+        });
+    });
+    </script>
+
+    <p>Attach multiple event handlers to a p element:</p>
+
+    <p>several changes on mouseenter mouseleave and click</p>
+
+    <script>
+    $(document).ready(function(){
+        $("p").on({
+            mouseenter: function(){
+              $(this).css("background-color", "lightgray");
+            },  
+            mouseleave: function(){
+              $(this).css("background-color", "lightblue");
+            }, 
+            click: function(){
+              $(this).css("background-color", "yellow");
+            }  
+        });
+    });
+    </script>
 
 </body>
 </html>
