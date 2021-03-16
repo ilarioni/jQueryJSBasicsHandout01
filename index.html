@@ -44,8 +44,32 @@
         <li>$("#test").hide() - hides the element with id="test".</li>
     </ol>
 
-    <h3></h3>
+    <h3>The Document Ready Event</h3>
+    <p>all jQuery methods in our examples, are inside a document ready event:</p>
 
+    <!--
+        $(document).ready(function(){
+
+        // jQuery methods go here...
+
+        });
+    -->
+    <p>This is to prevent any jQuery code from running before the document is finished loading (is ready).</p>
+
+    <p>Here are some examples of actions that can fail if methods are run before the document is fully loaded:</p>
+    <ul>
+        <li>Trying to hide an element that is not created yet</li>
+        <li>Trying to get the size of an image that is not loaded yet</li>
+    </ul>
+
+    <p>The jQuery team has also created an even shorter method for the document ready event:</p>
+    <!--
+        $(function(){
+
+        // jQuery methods go here...
+
+        });
+    -->
     
 </body>
 </html>
