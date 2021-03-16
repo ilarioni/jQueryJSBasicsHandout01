@@ -147,10 +147,34 @@
                 $(this).hide();
             });
         });
-
     -->
 
-    
+    <h3>other mostly used methods</h3>
+    <ol>
+        <li>dblclick()</li>
+        <li>mouseenter()</li>
+        <li>mouseleave()</li>
+        <li>mousedown()</li>
+        <li>mouseup()</li>
+        <li>hover()</li>
+        <li>focus()</li>
+        <li>blur()</li>
+    </ol>
+
+    <h5>blur example</h5>
+
+    <script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color", "yellow");
+        });
+        $("input").blur(function(){
+            $(this).css("background-color", "green");
+        });
+    });
+    </script>
+
+
 
 </body>
 </html>
