@@ -207,6 +207,26 @@
 
     <h1>jQuery Effects - Hide and Show</h1>
     <p>Hide, Show, Toggle, Slide, Fade, and Animate. WOW!</p>
+    <p>With jQuery, you can hide and show HTML elements with the hide() and show() methods:</p>
+
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+    });
+    </script>
+
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+
+
 
 </body>
 </html>
