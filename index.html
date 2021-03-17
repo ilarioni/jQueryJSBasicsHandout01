@@ -224,6 +224,28 @@
 
     <button id="hide">Hide</button>
     <button id="show">Show</button>
+    
+    <p>Syntax:</p>
+
+    <!--
+        $(selector).hide(speed,callback);
+        $(selector).show(speed,callback);
+    -->
+
+    <h3>speed of hide or showing</h3>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide(1000);
+        });
+    });
+    </script>
+
+    <button>Hide</button>
+
+    <p>This is a paragraph with little content.</p>
+    <p>This is another small paragraph.</p>
 
 
 
