@@ -389,6 +389,19 @@
     });
     </script>
 
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+
+    <h3>jQuery slideUp() Method</h3>
+    <p>The jQuery slideUp() method is used to slide up an element.</p>
+
+    <script> 
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideUp("slow");
+        });
+    });
+    </script>
 
 
 
