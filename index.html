@@ -326,8 +326,19 @@
     <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
     <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 
-    
+    <h3>jQuery fadeToggle() method</h3>
+    <p>The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.</p>
 
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+        });
+    });
+    </script>
+    
 
 
 </body>
