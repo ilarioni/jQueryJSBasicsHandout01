@@ -505,6 +505,19 @@
 
     <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
+    <h3>jQuery animate() - Uses Queue Functionality</h3>
+
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            var div = $("div");
+            div.animate({height: '300px', opacity: '0.4'}, "slow");
+            div.animate({width: '300px', opacity: '0.8'}, "slow");
+            div.animate({height: '100px', opacity: '0.4'}, "slow");
+            div.animate({width: '100px', opacity: '0.8'}, "slow");
+        });
+    });
+    </script>
 
 
 </body>
