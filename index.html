@@ -484,6 +484,19 @@
 
     <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
+    <h3>jQuery animate() - Using Pre-defined Values</h3>
+    <p>You can even specify a property's animation value as "show", "hide", or "toggle":</p>
+
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({
+              height: 'toggle'
+            });
+        });
+    });
+    </script>
+
 
 
 </body>
