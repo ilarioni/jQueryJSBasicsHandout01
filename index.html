@@ -422,7 +422,18 @@
 
     <h1>jQuery effects - Animation </h1>
     <p>With jQuery, you can create custom animations.</p>
+    <p>The jQuery animate() method is used to create custom animations.</p>
 
+    <p>Syntaxs:</p>
+    <p>$(selector).animate({params},speed,callback);</p>
+
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({left: '250px'});
+        });
+    });
+    </script> 
 
 
 
