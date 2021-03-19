@@ -465,7 +465,18 @@
 
     <h3>jQuery animate() - Using Relative Values</h3>
     <p>It is also possible to define relative values (the value is then relative to the element's current value). This is done by putting += or -= in front of the value:</p>
-    
+
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({
+              left: '250px',
+              height: '+=150px',
+              width: '+=150px'
+            });
+        });
+    });
+    </script> 
 
 
 
