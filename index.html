@@ -546,6 +546,20 @@
     <h3>jQuery Stop Animations</h3>
     <p>The jQuery stop() method is used to stop animations or effects before it is finished.</p>
 
+    <p>The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.</p>
+
+    <script> 
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown(5000);
+        });
+        $("#stop").click(function(){
+            $("#panel").stop();
+        });
+    });
+    </script>
+
+
 
 </body>
 </html>
