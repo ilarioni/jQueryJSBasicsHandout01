@@ -599,7 +599,18 @@
     <p>With jQuery, you can chain together actions/methods.</p>
     <p>Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.</p>
 
-    
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+        });
+    });
+    </script>
+
+    <p id="p1">jQuery is fun!!</p>
+
+    <button>Click me</button>
+
 
 
 
