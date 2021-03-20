@@ -581,6 +581,17 @@
 
     <p>This is a paragraph with little content.</p>
 
+    <h3>Example without Callback</h3>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide(1000);
+            alert("The paragraph is now hidden");
+        });
+    });
+    </script>
+
+
 
 </body>
 </html>
