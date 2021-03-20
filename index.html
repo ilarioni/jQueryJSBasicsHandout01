@@ -567,7 +567,16 @@
     <h1>jQuery Callback Functions</h1>
     <p>A callback function is executed after the current effect is 100% finished.</p>
 
-    
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide("slow", function(){
+              alert("The paragraph is now hidden");
+            });
+        });
+    });
+    </script>
+
 
 </body>
 </html>
