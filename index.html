@@ -654,6 +654,18 @@
     <button id="btn1">Show Text</button>
     <button id="btn2">Show HTML</button>
 
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            alert("Value: " + $("#test").val());
+        });
+    });
+    </script>
+
+    <p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+
+    <button>Show Value</button>
+
 
 
 
