@@ -716,6 +716,23 @@
     <button id="btn2">Set HTML</button>
     <button id="btn3">Set Value</button>
 
+    <h3>A Callback Function for text(), html(), and val()</h3>
+
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#test1").text(function(i, origText){
+              return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+            });
+        });
+        
+        $("#btn2").click(function(){
+            $("#test2").html(function(i, origText){
+              return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
+            });
+        });
+    });
+    </script>
 
 
 
