@@ -740,6 +740,25 @@
     <button id="btn1">Show Old/New Text</button>
     <button id="btn2">Show Old/New HTML</button>
 
+    <h3>Set Attributes - attr()</h3>
+    <p>The jQuery attr() method is also used to set/change attribute values.</p>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+        });
+    });
+    </script>
+
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+    <button>Change href Value</button>
+
+    <p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+
+    
+
 
 
 </body>
