@@ -757,7 +757,26 @@
 
     <p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
 
-    
+    <h3>The attr() method also allows you to set multiple attributes at the same time.</h3>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#w3s").attr({
+              "href" : "https://www.w3schools.com/jquery/",
+              "title" : "W3Schools jQuery Tutorial"
+            });
+        });
+    });
+    </script>
+
+    <p><a href="https://www.w3schools.com" title="some title" id="w3s">W3Schools.com</a></p>
+
+    <button>Change href and title</button>
+
+    <p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p>
+
+
 
 
 
