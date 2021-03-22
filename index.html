@@ -857,8 +857,17 @@
     <button id="btn1">Prepend text</button>
     <button id="btn2">Prepend list item</button>
 
+    <h3>Add Several New Elements With append() and prepend()</h3>
 
-
+    <script>
+    function appendText() {
+        var txt1 = "<p>Text.</p>";        // Create text with HTML
+        var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+        var txt3 = document.createElement("p");
+        txt3.innerHTML = "Text.";         // Create text with DOM
+        $("body").append(txt1, txt2, txt3);   // Append new elements
+    }
+    </script>
 
 
 
