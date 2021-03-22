@@ -872,6 +872,22 @@
     <p>This is a paragraph.</p>
     <button onclick="appendText()">Append text</button>
 
+    <h3>jQuery after() and before() Methods</h3>
+    <p>The jQuery after() method inserts content AFTER the selected HTML elements.</p>
+    <p>The jQuery before() method inserts content BEFORE the selected HTML elements.</p>
+
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("img").before("<b>Before</b>");
+        });
+        
+        $("#btn2").click(function(){
+            $("img").after("<i>After</i>");
+        });
+    });
+    </script>
+
 
 
 
