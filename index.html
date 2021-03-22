@@ -834,7 +834,17 @@
     <h3>jQuery prepend() Method</h3>
     <p>The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.</p>
 
-    
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").prepend("<b>Prepended text</b>. ");
+        });
+        $("#btn2").click(function(){
+            $("ol").prepend("<li>Prepended item</li>");
+        });
+    });
+    </script>
+
 
 
 
