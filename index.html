@@ -1007,6 +1007,15 @@
         <li>toggleClass() - Toggles between adding/removing classes from the selected elements</li>
         <li>css() - Sets or returns the style attribute</li>
     </ul>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+        });
+    </script>
   
   
 
