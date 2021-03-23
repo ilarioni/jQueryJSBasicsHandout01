@@ -965,6 +965,19 @@
     
     <button>Empty the div element</button>
 
+    <h3>Filter the Elements to be Removed</h3>
+    <p>The jQuery remove() method also accepts one parameter, which allows you to filter the elements to be removed.</p>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").remove(".test");
+            });
+        });
+    </script>
+
+
+
 
 
 
