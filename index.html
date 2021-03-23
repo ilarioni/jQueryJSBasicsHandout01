@@ -1026,6 +1026,22 @@
     <div>This is some important text!</div><br>
 
     <button>Add classes to elements</button>
+
+    <p>or</p>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").addClass("important blue");
+        });
+    });
+    </script>
+
+    <div id="div1">This is some text.</div>
+    <div id="div2">This is some text.</div>
+    <br>
+
+    <button>Add classes to first div element</button>
+
   
   
 
