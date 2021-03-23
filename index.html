@@ -982,6 +982,24 @@
 
     <button>Remove all p elements with class="test"</button>
 
+    <h3>you can also choose several filter</h3>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").remove(".test, .demo");
+        });
+    });
+    </script>
+
+    <p>This is a paragraph.</p>
+    <p class="test">This is p element with class="test".</p>
+    <p class="test">This is p element with class="test".</p>
+    <p class="demo">This is p element with class="demo".</p>
+
+    <button>Remove all p elements with class="test" and class="demo"</button>
+    
+  
+  
 
 
 
