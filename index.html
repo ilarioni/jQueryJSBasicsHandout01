@@ -1179,6 +1179,19 @@
         </div>
     </div>
 
+    <h3>jQuery parents() Method</h3>
+    <p>The parents() method returns all ancestor elements of the selected element, all the way up to the document's root element (<html>).</p>
+    <p>The following example returns all ancestors of all span elements:</p>
+
+    <p>all kinds of parents</p>
+    <script>
+    $(document).ready(function(){
+        $("span").parents().css({"color": "red", "border": "2px solid red"});
+    });
+    </script>
+
+    
+
 
 </body>
 </html>
