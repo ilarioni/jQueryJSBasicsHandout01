@@ -1348,7 +1348,50 @@
         <p>p</p>
     </div>
 
-    
+    <h3>jQuery prev(), prevAll() & prevUntil() Methods</h3>
+    <p>The prev(), prevAll() and prevUntil() methods work just like the methods above but with reverse functionality: they return previous sibling elements (traverse backwards along sibling elements in the DOM tree, instead of forward).</p>
+
+    <h1>jQuery Traversing - Filtering</h1>
+    <h3>The first(), last(), eq(), filter() and not() Methods</h3>
+    <p>The most basic filtering methods are first(), last() and eq(), which allow you to select a specific element based on its position in a group of elements.</p>
+
+    <h3>jQuery first() Method</h3>
+    <p>The first() method returns the first element of the specified elements.</p>
+
+    <script>
+    $(document).ready(function(){
+        $("div").first().css("background-color", "yellow");
+    });
+    </script>
+
+    <h1>Welcome to My Homepage</h1>
+
+    <p>This is a paragraph.</p>
+
+    <div style="border: 1px solid black;">
+    <p>A paragraph in a div.</p>
+    <p>Another paragraph in a div.</p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">
+    <p>A paragraph in another div.</p>
+    <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">
+    <p>A paragraph in another div.</p>
+    <p>Another paragraph in another div.</p>
+    </div>
+
+
+
+
+
+
+
+
 
 
 
