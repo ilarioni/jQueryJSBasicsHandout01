@@ -1215,6 +1215,24 @@
         </ul>   
     </div>
 
+    <h1>jQuery Traversing - Descendants</h1>
+    <p>With jQuery you can traverse down the DOM tree to find descendants of an element.</p>
+    <p>Two useful jQuery methods for traversing down the DOM tree are:</p>
+    <ul>
+        <li>children()</li>
+        <li>find()</li>
+    </ul>
+
+    <h3>jQuery children() Method</h3>
+    <p>The children() method returns all direct children of the selected element.</p>
+
+    <script>
+    $(document).ready(function(){
+        $("div").children().css({"color": "red", "border": "2px solid red"});
+    });
+    </script>
+
+
 
 
 
