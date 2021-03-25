@@ -1540,7 +1540,21 @@
         <li>POST - Submits data to be processed to a specified resource</li>
     </ul>
 
-    
+    <h3>jQuery $.get() Method</h3>
+    <p>The $.get() method requests data from the server with an HTTP GET request.</p>
+
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.get("demo_test.asp", function(data, status){
+              alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    });
+    </script>
+
+
 
 
 
