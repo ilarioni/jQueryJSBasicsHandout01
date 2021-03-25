@@ -1554,8 +1554,29 @@
     });
     </script>
 
+    <button>Send an HTTP GET request to a page and get the result back</button>
 
+    <h3>jQuery $.post() Method</h3>
+    <p>The $.post() method requests data from the server using an HTTP POST request.</p>
 
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.post("demo_test_post.asp",
+            {
+              name: "Donald Duck",
+              city: "Duckburg"
+            },
+            function(data,status){
+              alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    });
+    </script>
+
+    <button>Send an HTTP POST request to a page and get the result back</button>
+
+    
 
 
 
