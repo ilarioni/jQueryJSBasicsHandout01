@@ -1599,6 +1599,23 @@
     <p>This is a paragraph.</p>
     <button>Test jQuery</button>
 
+    <p>or</p>
+
+    <script>
+    $.noConflict();
+    jQuery(document).ready(function($){
+        $("button").click(function(){
+            $("p").text("jQuery is still working!");
+        });
+    });
+    </script>
+
+    <p>This is a paragraph.</p>
+    <button>Test jQuery</button>
+
+
+
+
 
 
 
