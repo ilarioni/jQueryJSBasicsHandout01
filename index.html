@@ -1576,7 +1576,31 @@
 
     <button>Send an HTTP POST request to a page and get the result back</button>
 
-    
+    <h1>jQuery - The noConflict() Method</h1>
+    <p>What if you wish to use other frameworks on your pages, while still using jQuery?</p>
+
+    <h3>jQuery and Other JavaScript Frameworks</h3>
+
+    <p>As you already know; jQuery uses the $ sign as a shortcut for jQuery.</p>
+    <p>If two different frameworks are using the same shortcut, one of them might stop working.</p>
+
+    <h3>The jQuery noConflict() Method</h3>
+    <p>The noConflict() method releases the hold on the $ shortcut identifier, so that other scripts can use it.</p>
+
+    <script>
+    $.noConflict();
+    jQuery(document).ready(function(){
+        jQuery("button").click(function(){
+            jQuery("p").text("jQuery is still working!");
+        });
+    });
+    </script>
+
+    <p>This is a paragraph.</p>
+    <button>Test jQuery</button>
+
+
+
 
 
 
